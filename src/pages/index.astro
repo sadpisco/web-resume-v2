@@ -1,12 +1,16 @@
 ---
+import Hero from "@/components/organism/Hero";
+import useTranslations from "@/hooks/getTranslations";
+import Layout from "@/layouts";
 import "@/styles/global.css";
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { getLocale } from "astro-i18n-aut";
+
+const { getTranslations } = useTranslations();
+const locale = getLocale(Astro.url);
+const data = await getTranslations(locale);
+console.log(data);
 ---
 
 <Layout>
-  <Welcome />
-  <h1>123</h1>
+  <Hero />
 </Layout>

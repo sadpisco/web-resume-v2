@@ -1,0 +1,6 @@
+---
+import { getLocale } from "astro-i18n-aut";
+const locale = getLocale(Astro.url);
+---
+
+<a href={locale === "es" ? "/" : "/es"}>Change Locale</a>

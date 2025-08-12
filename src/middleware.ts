@@ -1,7 +1,7 @@
 import { defineMiddleware } from 'astro:middleware';
 
 export const onRequest = defineMiddleware(async (context, next) => {
-    const { url, generator } = context;
+    const { url, generator, preferredLocale } = context;
     console.info(`Enviroment: ${url.href}`);
     console.info(`Generator: ${generator}`);
 
