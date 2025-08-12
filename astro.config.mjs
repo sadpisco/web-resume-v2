@@ -1,5 +1,6 @@
 // @ts-check
 import cloudflare from '@astrojs/cloudflare';
+import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import { i18n } from "astro-i18n-aut/integration";
 import { defineConfig } from 'astro/config';
@@ -30,5 +31,6 @@ export default defineConfig({
   }),
   integrations: [
     i18n({ locales, defaultLocale }),
+    react(),
   ]
 });
