@@ -1,7 +1,10 @@
 ---
-
+interface HeroProps {
+  title?: string;
+}
+const { title }: HeroProps = Astro.props;
 ---
 
-<section class="w-full flex flex-col items-center justify-cente bg-red-500">
-  <h1>Hero</h1>
+<section class="w-full flex flex-col items-center justify-center bg-red-500">
+  <h1>{title}</h1>
 </section>
