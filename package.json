@@ -14,12 +14,16 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.3",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.9",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
