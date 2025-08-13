@@ -1,6 +1,7 @@
 {
-  "title": "Hello World!",
-  "hero": {},
+  "hero": {
+    "title": "Hello World!"
+  },
   "summary": {},
   "techStack": {},
   "projects": {},
