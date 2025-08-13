@@ -13,10 +13,10 @@ const LangSwitch = ({ locale }: LangSwitchProps) => {
         }
     }
     return (
-        <section className="flex items-center gap-2 text-lg font-medium">
-            <span>EN</span>
+        <section className="flex items-center gap-2 text-lg">
+            <span>{locale === "en" ? "English" : "Inglés"}</span>
             <Switch checked={locale === "es"} onCheckedChange={handleChange} />
-            <span>ES</span>
+            <span>{locale === "en" ? "Spanish" : "Español"}</span>
         </section>
     )
 }

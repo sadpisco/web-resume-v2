@@ -5,7 +5,7 @@ import { getLocale } from "astro-i18n-aut";
 const locale = getLocale(Astro.url);
 ---
 
-<nav class="flex justify-between w-full bg-blend-color">
-  <DarkThemeSwitch client:load />
+<nav class="flex justify-between w-full bg-blend-color py-4">
+  <DarkThemeSwitch locale={locale} client:load />
   <LangSwitch locale={locale} client:load />
 </nav>
