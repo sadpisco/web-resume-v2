@@ -1,3 +1,10 @@
 {
-  "title": "Hello World!"
+  "title": "Hello World!",
+  "hero": {},
+  "summary": {},
+  "techStack": {},
+  "projects": {},
+  "workExperience": {},
+  "education": {},
+  "certifications": {}
 }
