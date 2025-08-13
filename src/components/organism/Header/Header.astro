@@ -1,6 +1,11 @@
 ---
+import DarkThemeSwitch from "@/components/molecules/DarkThemeSwitch";
+import LangSwitch from "@/components/molecules/LangSwitch";
 import { getLocale } from "astro-i18n-aut";
 const locale = getLocale(Astro.url);
 ---
 
-<a href={locale === "es" ? "/" : "/es"}>Change Locale</a>
+<nav class="flex justify-between w-full bg-blend-color">
+  <DarkThemeSwitch client:load />
+  <LangSwitch locale={locale} client:load />
+</nav>

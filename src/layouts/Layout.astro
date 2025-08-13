@@ -1,10 +1,13 @@
 ---
 import Header from "@/components/organism/Header";
+import { cn } from "@/lib/utils";
+import { getLocale } from "astro-i18n-aut";
+const locale = getLocale(Astro.url);
 const title = "Leo Risco FrontEnd Dev";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -14,10 +17,19 @@ const title = "Leo Risco FrontEnd Dev";
   </head>
   <body class="h-full w-full flex items-start justify-center">
     <section
-      class="w-full flex flex-col items-center justify-center max-w-screen-2xl"
+      class="w-full flex flex-col items-center justify-center max-w-screen-xl"
     >
       <Header />
       <slot />
     </section>
   </body>
 </html>
+<script>
+  // Handle Dark Theme
+  const theme = localStorage.getItem("theme");
+  if (theme === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script>
