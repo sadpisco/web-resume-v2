@@ -22,6 +22,7 @@ export default defineConfig({
     resolve: {
       alias: {
         '@': '/src', // '@' apunta a la carpeta src
+        'react-dom/server': 'react-dom/server.edge'
       },
     },
   },
