@@ -10,6 +10,7 @@ const locales = {
   en: "en-US",
   es: "es-ES",
 };
+const isProd = process.env.NODE_ENV === 'production';
 // https://astro.build/config
 export default defineConfig({
   site: "https://leorisco.dev",
@@ -22,7 +23,7 @@ export default defineConfig({
     resolve: {
       alias: {
         '@': '/src', // '@' apunta a la carpeta src
-        // 'react-dom/server': 'react-dom/server.edge'
+        ...(isProd ? { 'react-dom/server': 'react-dom/server.edge' } : {})
       },
     },
   },
