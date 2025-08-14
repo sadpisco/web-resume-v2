@@ -1,12 +1,215 @@
 {
   "hero": {
-    "title": "Hello World!"
+    "name": "Leonardo Risco",
+    "labelOne": "Developer",
+    "labelThree": "I create scalable web software",
+    "email": "leo99153@gmail.com",
+    "phone": "+51954163059",
+    "url": "https://www.linkedin.com/in/leonardo-risco/",
+    "location": {
+      "address": "Victor Larco Herrera",
+      "postalCode": "13001",
+      "city": "Trujillo",
+      "countryCode": "PE",
+      "region": "La Libertad"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Leonardo Risco",
+        "url": "https://www.linkedin.com/in/leonardo-risco/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Leonardo Risco",
+        "url": "https://github.com/sadpisco"
+      },
+      {
+        "network": "Instagram",
+        "username": "Leonardo Risco",
+        "url": "https://www.instagram.com/sadpisco/"
+      }
+    ]
   },
-  "summary": {},
-  "techStack": {},
-  "projects": {},
-  "workExperience": {},
-  "education": {},
-  "certifications": {},
+  "summary": {
+    "title": "About me",
+    "summary": "I'm a Full Stack Web Developer from Henry BootCamps and Bachelor's in Business Engineering from Peruvian Private Northern University (UPN). I have experience developing web applications that are responsive and scalable. Im skilled in frameworks like React for FrontEnd and Express & Nest in BackEnd. I've built several projects on my portfolio using React, Express and Nest, where I can show my habilities building responsive web sites and secure backEnd servers. My last project as a freelancer was EcowashWeb, a static site for a carwash local business. I'm a very proactive person, I'm always working on a project and pushing changes to my gitHub."
+  },
+  "techStack": {
+    "items": [
+      "Express",
+      "Nest",
+      "React",
+      "Next",
+      "Vue",
+      "Nuxt",
+      "Astro",
+      "Strapi",
+      "Payload",
+      "Tailwind"
+    ]
+  },
+  "projects": {
+    "title": "Projects built by myself",
+    "projects": [
+      {
+        "name": "Ecowash",
+        "startDate": "2024/05/04",
+        "endDate": "2024/05/05",
+        "description": "Static Page - React.js, GoogleMaps API, Calendly API, TailwindCSS, MUi, Responsive and  Bootrap. Serverless web page for a local Carwash.",
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973818/ecowash_csxpkn.png",
+        "status": "Finished",
+        "url": "https://lavadosecowash.netlify.app/",
+        "gitHub": "https://github.com/sadpisco/EcowashWeb"
+      },
+      {
+        "name": "TechZone",
+        "startDate": "2024/02/04",
+        "endDate": "Today",
+        "description": "eCommerce - Nest, TypeORM and MySQL RestAPi ,JWT Auth, Front with React TypeScript, TailwindCSS, Paypal, Redux, Next.JS, Bootstrap, TailwindCSS and MUI.",
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
+        "status": "On Development",
+        "url": "https://project.com/",
+        "gitHub": "https://github.com/TechZoneDevs/client",
+        "technologies": ["React", "TypeScript", ""]
+      },
+      {
+        "name": "Matching",
+        "startDate": "2019/01/01",
+        "endDate": "2021/01/01",
+        "description": "Sports App - Express RestAPI, PostgreSQL & Sequelize, FirebaseAuth and MercadoPago integrated. Front with React.js, Redux, Material UI, Bootstrap, TailwindCSS.",
+        "image": "https://res.cloudinary.com/dphpu225t/image/upload/v1719439335/846_1x_shots_so_ekrweh.png",
+        "status": "Finished",
+        "url": "https://project.com/",
+        "gitHub": "https://github.com/MatchingProyect/Matching-Front"
+      },
+      {
+        "name": "The Rick And Morty Project",
+        "startDate": "2019/01/01",
+        "endDate": "2021/01/01",
+        "description": "Basic CRUD - API Rest with Express, PostgreSQL and Sequelize. Front with React.js, Redux, CSS, Mui.",
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973817/rymresult_l6e6az.png",
+        "status": "Finished",
+        "url": "https://rym-front-2vuf.onrender.com",
+        "gitHub": "https://github.com/sadpisco/RickAndMortyProyect"
+      },
+      {
+        "name": "Basic CRUD",
+        "startDate": "2024/05/05",
+        "endDate": "2024/5/15 - One week",
+        "description": "Express RestAPI with PostgreSQL & Sequelize, React.JS integrated with Redux and JWT Auth, MUi, Bootstrap & TailwindCSS.",
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1716510277/919shots_so_abru0p.png",
+        "status": "Finished",
+        "url": "https://client-haciendola-chi.vercel.app/",
+        "gitHub": "https://github.com/sadpisco/client-haciendola"
+      }
+    ]
+  },
+  "workExperience": {
+    "title": "Experience",
+    "experience": [
+      {
+        "name": "Freelancer",
+        "position": "Web development",
+        "startDate": "2024/03/24",
+        "endDate": "today",
+        "summary": "I'm selling web development services for local businesses of my city, my last client was a local Carwash.",
+        "location": "Remote"
+      },
+      {
+        "name": "Turo",
+        "position": "Customer Service Representative",
+        "startDate": "2022/06/04",
+        "endDate": "2023/09/05",
+        "summary": "Customer relationship management, after-sales services, coordination of business services and billing and sales of external clients.",
+        "location": "Remote"
+      },
+      {
+        "name": "Delaware North (TD Garden)",
+        "position": "Junior Logistics Coordinator",
+        "startDate": "2021/12/08",
+        "endDate": "2022/04/05",
+        "summary": "In charge of receiving supply orders, organizing warehouse inventory, managing internal logistics of the stadium (Boston Celtics and Boston Bruins), among others.",
+        "location": "Boston, MA, USA"
+      },
+      {
+        "name": "Delaware North (TD Garden)",
+        "position": "Prep Cook",
+        "startDate": "2019/12/08",
+        "endDate": "2020/04/21",
+        "summary": "Management and preparation of kitchen supplies to supply different points of sale within the TD Garden stadium (Boston Celtics and Boston Bruins).",
+        "location": "Boston, MA, USA"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "titleTwo": "Knowledge on",
+    "educations": [
+      {
+        "institution": "Henry FullStack Bootcamp",
+        "area": "Software Development",
+        "title": "FullStack Developer",
+        "startDate": "2023/11/15",
+        "endDate": "2024/02/15",
+        "summary": "Knowledge developing web applications that are responsive and scalable. My english has allowed me to improve my skills, accessing information that its not in spanish, helped me improving my teamwork, also, allow my applications to support business processes with ease. I am a very proactive person who's always taking new goals in order to improve my capabilities. I have some projects where I've worked in UX / UI design, front-End & back-End. Please feel free to check them.",
+        "areas": [
+          "SQL",
+          "JavaScript",
+          "PostgreSQL",
+          "Node",
+          "Express",
+          "React.Js",
+          "TypeScript",
+          "CSS",
+          "Redux",
+          "Next.Js",
+          "Sequelize",
+          "MUI"
+        ]
+      },
+      {
+        "institution": "Private Northern University",
+        "area": "Business",
+        "title": "Business Engineering",
+        "startDate": "2016/03/05",
+        "endDate": "2021/12/15",
+        "summary": "Bachelor at Business School. Business Engineer title is currently in process. Proficient knowledge on business management areas and workflows. Experience creating and developing supply chains, logistics procedures, inventory management, and human resources management & recruiting. Specialized on process management and business cases problem solving.",
+        "areas": [
+          "Supply Chain",
+          "Project Management",
+          "Business Proceses",
+          "Recruiting",
+          "Internal and External Logistics",
+          "Business IT Infrastructures",
+          "Customer Relationship Management",
+          "Data Entry"
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "certificates": [
+      {
+        "name": "FullStack Web Developer",
+        "date": "2024-02-15",
+        "issuer": "Henry Bootcamps",
+        "url": "https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=0c814ec78e282f45b19fb0adf8f16518f0cae05f945fac3ee48fda9da9323062"
+      },
+      {
+        "name": "Bachelor in Business",
+        "date": "2021-12-29",
+        "issuer": "Universidad Privada del Norte",
+        "url": "https://drive.google.com/file/d/1a8N6lrHzeG7VahX8VN5j5Auyd7iCEnQA/view"
+      },
+      {
+        "name": "English C2 Proficient",
+        "date": "2023-12-05",
+        "issuer": "Education First",
+        "url": "https://cert.efset.org/aKF8Nu"
+      }
+    ]
+  },
   "extras": {}
 }
