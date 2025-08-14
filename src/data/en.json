@@ -1,8 +1,8 @@
 {
   "hero": {
     "name": "Leonardo Risco",
-    "labelOne": "Developer",
-    "labelThree": "I create scalable web software",
+    "position": "Developer",
+    "role": "I create scalable web software",
     "email": "leo99153@gmail.com",
     "phone": "+51954163059",
     "url": "https://www.linkedin.com/in/leonardo-risco/",

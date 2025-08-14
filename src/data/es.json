@@ -1,8 +1,8 @@
 {
   "hero": {
     "name": "Leonardo Risco",
-    "labelOne": "Desarrollador",
-    "labelThree": "Desarrollo aplicaciones web escalables",
+    "position": "Web Developer",
+    "role": "Desarrollo aplicaciones web escalables",
     "email": "leo99153@gmail.com",
     "phone": "+51954163059",
     "url": "https://www.linkedin.com/in/leonardo-risco/",
