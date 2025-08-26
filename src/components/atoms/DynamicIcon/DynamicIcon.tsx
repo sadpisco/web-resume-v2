@@ -25,8 +25,8 @@ const DynamicIcon: React.FC<DynamicIconProps> = (props) => {
     const { iconname, className, weight, size, ...rest } = props;
 
     if (iconname) {
-        const IconGenerator: React.FC<IconProps> = lazy(() =>
-            DynamicPhosphor(iconname.replace(/\s+/g, ''))
+        const IconGenerator: React.FC<IconProps> = lazy(async () =>
+            await DynamicPhosphor(iconname.replace(/\s+/g, ''))
         );
         return <IconGenerator className={cn('', className)} weight={weight} size={size} {...rest} />;
     }
