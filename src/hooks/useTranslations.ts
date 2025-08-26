@@ -1,6 +1,6 @@
 export default function useTranslations() {
     const getTranslations = async (locale: string) => {
-        const data = (await import(`../data/${locale}.json`)).default;
+        const data = (await import(`../locales/${locale}.json`)).default;
         return data;
     }
     return {
