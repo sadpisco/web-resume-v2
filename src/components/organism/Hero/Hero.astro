@@ -3,8 +3,8 @@ import ProfilePic from "@/assets/images/profilePic.jpg";
 // import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
 import HeroItem from "@/components/molecules/HeroItem";
+import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
 import { Image } from "astro:assets";
-import { EnvelopeSimple, MapPin, Phone } from "phosphor-react";
 interface HeroProps {
   name?: string;
   position?: string;
@@ -53,9 +53,6 @@ const { name, position, email, age, phone, location, profiles }: HeroProps =
       <HeroItem text={phone} link={`tel:${phone}`}>
         <Phone slot="icon" size={20} weight="bold" />
       </HeroItem>
-      <!-- <HeroItem text={age}>
-        <Cake slot="icon" size={20} weight="bold" />
-      </HeroItem> -->
       <HeroItem
         text={location?.city + ", " + location?.countryCode}
         link={location?.link}

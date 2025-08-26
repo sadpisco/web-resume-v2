@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { lazy, useEffect, useState } from 'react';
+import { lazy } from 'react';
 
 interface DynamicIconProps {
     iconname?: string;
@@ -22,11 +22,6 @@ async function DynamicPhosphor(iconName: string) {
 
 const DynamicIcon: React.FC<DynamicIconProps> = (props) => {
     const { iconname, className, weight, size, ...rest } = props;
-
-    const [, setActive] = useState(false);
-    useEffect(() => {
-        setActive(true);
-    }, []);
 
     if (iconname) {
         const IconGenerator: React.FC<IconProps> = lazy(() =>

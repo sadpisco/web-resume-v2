@@ -1,5 +1,5 @@
 import Switch from "@/components/atoms/Switch";
-import { Moon, SunDim } from "phosphor-react";
+import { Moon, SunDim } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 
 interface DarkThemeSwitchProps {
