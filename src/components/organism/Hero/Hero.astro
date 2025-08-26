@@ -1,6 +1,6 @@
 ---
 import ProfilePic from "@/assets/images/profilePic.jpg";
-// import DynamicIcon from "@/components/atoms/DynamicIcon";
+import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
 import HeroItem from "@/components/molecules/HeroItem";
 import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
@@ -62,13 +62,13 @@ const { name, position, email, age, phone, location, profiles }: HeroProps =
       {
         profiles?.map((profile) => (
           <HeroItem text={profile.username} link={profile.url}>
-            {/* <DynamicIcon
+            <DynamicIcon
               slot="icon"
               size={20}
               iconname={profile.icon}
               weight="bold"
-              client:load
-            /> */}
+              client:only="react"
+            />
           </HeroItem>
         ))
       }
