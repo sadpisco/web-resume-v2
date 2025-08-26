@@ -3,31 +3,18 @@ import ProfilePic from "@/assets/images/profilePic.jpg";
 import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
 import HeroItem from "@/components/molecules/HeroItem";
+import type { HeroBlockProps } from "@/types/blocks";
 import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
 import { Image } from "astro:assets";
-interface HeroProps {
-  name?: string;
-  position?: string;
-  email?: string;
-  age?: string;
-  phone?: string;
-  location?: {
-    address?: string;
-    postalCode?: string;
-    city?: string;
-    countryCode?: string;
-    region?: string;
-    link?: string;
-  };
-  profiles?: {
-    network?: string;
-    icon?: string;
-    username?: string;
-    url?: string;
-  }[];
-}
-const { name, position, email, age, phone, location, profiles }: HeroProps =
-  Astro.props;
+const {
+  name,
+  position,
+  email,
+  age,
+  phone,
+  location,
+  profiles,
+}: HeroBlockProps = Astro.props;
 ---
 
 <section class="w-full flex items-start justify-start gap-4">
@@ -38,7 +25,12 @@ const { name, position, email, age, phone, location, profiles }: HeroProps =
   />
   <div class="flex flex-col gap-2">
     <div>
-      <Typography tag="h1" text={name} variant="label1" />
+      <Typography
+        tag="h1"
+        text={name}
+        variant="label1"
+        className="font-medium"
+      />
       <Typography
         tag="h2"
         text={position}

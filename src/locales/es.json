@@ -37,20 +37,91 @@
   },
   "summary": {
     "title": "Sobre mí",
-    "summary": "Soy Desarrollador Web Full Stack de Henry BootCamps y Bachiller en Ingeniería Empresarial de la Universidad Privada del Norte del Perú (UPN). Tengo experiencia desarrollando BackEnds y FrontEnds seguros y escalables. Tengo un conocimiento alto de frameworks como React, Next, Angular, Express y Nest.js . Poseo varios proyectos personals en portfolio donde demuestro mis habilidades como programador y diseñador de aplicaciones Web. Actualmente me desenvuelvo como Freelancer prestando servicios de desarrollo Web a empresas locales, mi último proyecto fue EcowashWeb, una página estática para un negocio local de lavado de autos. Siempre estoy codeando y commiteando a mi GitHub."
+    "summary": "Soy Desarrollador Web Full Stack de Henry BootCamps y Bachiller en Ingeniería Empresarial de la Universidad Privada del Norte del Perú (UPN). Tengo experiencia desarrollando BackEnds y FrontEnds seguros y escalables. Tengo un conocimiento alto de frameworks como React, Next, Angular, Express y Nest.js. Poseo varios proyectos personals en portfolio donde demuestro mis habilidades como programador y diseñador de aplicaciones Web. Actualmente me desenvuelvo como Freelancer prestando servicios de desarrollo Web a empresas locales, mi último proyecto fue EcowashWeb, una página estática para un negocio local de lavado de autos. Siempre estoy codeando y commiteando a mi GitHub."
   },
   "stack": {
+    "title": "Tech Stack",
     "items": [
-      "Express",
-      "Nest",
-      "React",
-      "Next",
-      "Vue",
-      "Nuxt",
-      "Astro",
-      "Strapi",
-      "Payload",
-      "Tailwind"
+      {
+        "name": "Express",
+        "icon": "ExpressLogo",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "name": "Nest",
+        "icon": "NestLogo",
+        "url": "https://nestjs.com/"
+      },
+      {
+        "name": "Angular",
+        "icon": "AngularLogo",
+        "url": "https://angular.dev/"
+      },
+      {
+        "name": "React",
+        "icon": "ReactLogo",
+        "url": "https://react.dev/"
+      },
+      {
+        "name": "Next",
+        "icon": "NextLogo",
+        "url": "https://nextjs.org/"
+      },
+      {
+        "name": "Vue",
+        "icon": "VueLogo",
+        "url": "https://vuejs.org/"
+      },
+      {
+        "name": "Nuxt",
+        "icon": "NuxtLogo",
+        "url": "https://nuxt.com/"
+      },
+      {
+        "name": "Astro",
+        "icon": "AstroLogo",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Strapi",
+        "icon": "StrapiLogo",
+        "url": "https://strapi.io/"
+      },
+      {
+        "name": "WordPress",
+        "icon": "WordPressLogo",
+        "url": "https://wordpress.com/es/"
+      },
+      {
+        "name": "Payload",
+        "icon": "PayloadLogo",
+        "url": "https://payloadcms.com/"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "TailwindLogo",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "Cloudflare",
+        "icon": "CloudflareLogo",
+        "url": "https://www.cloudflare.com/"
+      },
+      {
+        "name": "Figma",
+        "icon": "FigmaLogo",
+        "url": "https://www.figma.com/"
+      },
+      {
+        "name": "Jira",
+        "icon": "JiraLogo",
+        "url": "https://www.atlassian.com/es/software/jira"
+      },
+      {
+        "name": "Trello",
+        "icon": "TrelloLogo",
+        "url": "https://trello.com/"
+      }
     ]
   },
   "projects": {

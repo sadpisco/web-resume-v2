@@ -1,0 +1,16 @@
+---
+import Typography from "@/components/atoms/Typography";
+import type { SummaryBlockProps } from "@/types/blocks";
+
+const { title, summary }: SummaryBlockProps = Astro.props;
+---
+
+<section class="w-full flex flex-col gap-2">
+  <Typography tag="h2" text={title} variant="label2" className="font-medium" />
+  <Typography
+    tag="p"
+    text={summary}
+    variant="label4"
+    className="font-light text-justify"
+  />
+</section>

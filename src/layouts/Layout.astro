@@ -2,7 +2,7 @@
 import Header from "@/components/organism/Header";
 import { getLocale } from "astro-i18n-aut";
 const locale = getLocale(Astro.url);
-const title = "Leo Risco FrontEnd Dev";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +22,7 @@ const title = "Leo Risco FrontEnd Dev";
   </head>
   <body class="h-full w-full flex items-start justify-center">
     <section
-      class="w-full flex flex-col items-center justify-center max-w-screen-lg"
+      class="w-full flex flex-col items-center justify-center max-w-screen-lg gap-8"
     >
       <Header />
       <slot />

@@ -1,5 +1,7 @@
 ---
 import Hero from "@/components/organism/Hero";
+import Stack from "@/components/organism/Stack";
+import Summary from "@/components/organism/Summary";
 import useTranslations from "@/hooks/useTranslations";
 import Layout from "@/layouts";
 import "@/styles/global.css";
@@ -10,6 +12,8 @@ const locale = getLocale(Astro.url);
 const data = await getTranslations(locale);
 ---
 
-<Layout>
+<Layout title="Leo Risco FrontEnd Dev">
   <Hero {...data.hero} />
+  <Summary {...data.summary} />
+  <Stack {...data.stack} />
 </Layout>

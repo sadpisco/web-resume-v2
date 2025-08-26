@@ -40,17 +40,88 @@
     "summary": "I'm a Full Stack Web Developer from Henry BootCamps and Bachelor's in Business Engineering from Peruvian Private Northern University (UPN). I have experience developing web applications that are responsive and scalable. Im skilled in frameworks like React for FrontEnd and Express & Nest in BackEnd. I've built several projects on my portfolio using React, Express and Nest, where I can show my habilities building responsive web sites and secure backEnd servers. My last project as a freelancer was EcowashWeb, a static site for a carwash local business. I'm a very proactive person, I'm always working on a project and pushing changes to my gitHub."
   },
   "stack": {
+    "title": "Tech Stack",
     "items": [
-      "Express",
-      "Nest",
-      "React",
-      "Next",
-      "Vue",
-      "Nuxt",
-      "Astro",
-      "Strapi",
-      "Payload",
-      "Tailwind"
+      {
+        "name": "Express",
+        "icon": "ExpressLogo",
+        "url": "https://expressjs.com/"
+      },
+      {
+        "name": "Nest",
+        "icon": "NestLogo",
+        "url": "https://nestjs.com/"
+      },
+      {
+        "name": "Angular",
+        "icon": "AngularLogo",
+        "url": "https://angular.dev/"
+      },
+      {
+        "name": "React",
+        "icon": "ReactLogo",
+        "url": "https://react.dev/"
+      },
+      {
+        "name": "Next",
+        "icon": "NextLogo",
+        "url": "https://nextjs.org/"
+      },
+      {
+        "name": "Vue",
+        "icon": "VueLogo",
+        "url": "https://vuejs.org/"
+      },
+      {
+        "name": "Nuxt",
+        "icon": "NuxtLogo",
+        "url": "https://nuxt.com/"
+      },
+      {
+        "name": "Astro",
+        "icon": "AstroLogo",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Strapi",
+        "icon": "StrapiLogo",
+        "url": "https://strapi.io/"
+      },
+      {
+        "name": "WordPress",
+        "icon": "WordPressLogo",
+        "url": "https://wordpress.com/es/"
+      },
+      {
+        "name": "Payload",
+        "icon": "PayloadLogo",
+        "url": "https://payloadcms.com/"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "TailwindLogo",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "Cloudflare",
+        "icon": "CloudflareLogo",
+        "url": "https://www.cloudflare.com/"
+      },
+      {
+        "name": "Figma",
+        "icon": "FigmaLogo",
+        "url": "https://www.figma.com/"
+      },
+      {
+        "name": "Jira",
+        "icon": "JiraLogo",
+        "url": "https://www.atlassian.com/es/software/jira"
+      },
+      {
+        "name": "Trello",
+        "icon": "TrelloLogo",
+        "url": "https://trello.com/"
+      }
     ]
   },
   "projects": {
