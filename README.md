@@ -1,10 +1,8 @@
-# Astro Web Resume to export PDF File
-
+# Personal Astro Web Resume to export as PDF File
+> 🧑‍🚀 **Use Node 20 to run this project
 ```sh
-nvm use 20
+pnpm install
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
@@ -14,19 +12,32 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 │   └── favicon.svg
-├── src
-│   ├── assets
+├── src/
+│   ├── assets/
 │   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
+│   ├── components/
+│   │   └── atoms (ui components)
+│   │   └── molecules 
+│   │   └── organism
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── locales/
+│   │   └── en.json
+│   │   └── en.json
+│   ├── pages/
+│   │   └── index.astro
+│   │   └── 404.astro
+│   ├── layouts/
 │   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   └── styles/
+│       └── global.css (tailwind v4)
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🧞 Project Stack
+
+- Astro v5
+- Tailwind v4
 
 ## 🧞 Commands
 
@@ -41,6 +52,3 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
