@@ -1,0 +1,134 @@
+---
+import { cn } from "@/lib/utils";
+
+interface TypographyProps {
+  tag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "p";
+  text?: string;
+  isRawHtml?: boolean;
+  className?: string;
+  variant?:
+    | "label1"
+    | "label2"
+    | "label3"
+    | "label4"
+    | "label5"
+    | "label6"
+    | "p"
+    | "span";
+}
+
+//@defaults
+const {
+  tag = "p",
+  text,
+  isRawHtml = false,
+  className = "",
+  variant = "p",
+}: TypographyProps = Astro.props;
+
+const defaultTag = "p";
+const allowedTags = ["h1", "h2", "h3", "h4", "h5", "h6", "span", "p"];
+const Tag = allowedTags.includes(tag ?? defaultTag) ? tag : defaultTag;
+
+//@Global Classes
+const commonClass = "font-normal";
+//@Variants
+const variants = {
+  label1: `w-fit text-3xl lg:text-5xl`,
+  label2: `w-fit text-2xl lg:text-3xl`,
+  label3: `w-fit text-xl lg:text-2xl`,
+  label4: `w-fit text-lg lg:text-xl`,
+  label5: `w-fit text-md lg:text-lg`,
+  label6: `w-fit text-sm lg:text-md`,
+  p: `w-fit text-xs lg:text-sm`,
+  span: `w-fit text-base lg:text-lg`,
+};
+
+const currentVariant = (variant as keyof typeof variants)
+  ? variants[variant]
+  : variants.p;
+//@useCauses
+// Text tan be used either as the text prop or as a slot.
+// If isRawHtml is true, the text prop and the slot are ignored and the set:html is used.
+---
+
+{
+  Tag === "h1" && (
+    <h1
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h1>
+  )
+}
+{
+  Tag === "h2" && (
+    <h2
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h2>
+  )
+}
+{
+  Tag === "h3" && (
+    <h3
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h3>
+  )
+}
+{
+  Tag === "h4" && (
+    <h4
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h4>
+  )
+}
+{
+  Tag === "h5" && (
+    <h4
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h4>
+  )
+}
+{
+  Tag === "h6" && (
+    <h4
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </h4>
+  )
+}
+{
+  Tag === "p" && (
+    <p
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {!isRawHtml ? text ? text : <slot /> : null}
+    </p>
+  )
+}
+{
+  Tag === "span" && (
+    <span
+      class={cn(commonClass, currentVariant, className)}
+      set:html={isRawHtml ? text : null}
+    >
+      {text ? text : <slot />}
+    </span>
+  )
+}

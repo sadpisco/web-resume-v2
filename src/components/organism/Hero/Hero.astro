@@ -1,4 +1,7 @@
 ---
+import ProfilePic from "@/assets/profilePic.jpg";
+import Typography from "@/components/atoms/Typography";
+import { Image } from "astro:assets";
 interface HeroProps {
   name?: string;
   position?: string;
@@ -7,8 +10,14 @@ interface HeroProps {
 const { name, position, role }: HeroProps = Astro.props;
 ---
 
-<section class="w-full flex flex-col items-center justify-center">
-  <h1 class="text-5xl font-bold">{name}</h1>
-  <h2 class="text-2xl font-semibold">{position}</h2>
-  <h3 class="text-lg font-medium">{role}</h3>
+<section class="w-full flex items-start justify-start gap-4">
+  <Image
+    src={ProfilePic}
+    alt="profile picture"
+    class="w-64 h-fit rounded-xl shadow-xl"
+  />
+  <div class="flex flex-col">
+    <Typography tag="h1" text={name} variant="label1" />
+    <Typography tag="p" text={position} variant="label5" />
+  </div>
 </section>
