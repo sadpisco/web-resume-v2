@@ -35,7 +35,7 @@
     "title": "Sobre mí",
     "summary": "Soy Desarrollador Web Full Stack de Henry BootCamps y Bachiller en Ingeniería Empresarial de la Universidad Privada del Norte del Perú (UPN). Tengo experiencia desarrollando BackEnds y FrontEnds seguros y escalables. Tengo un conocimiento alto de frameworks como React, Next, Angular, Express y Nest.js . Poseo varios proyectos personals en portfolio donde demuestro mis habilidades como programador y diseñador de aplicaciones Web. Actualmente me desenvuelvo como Freelancer prestando servicios de desarrollo Web a empresas locales, mi último proyecto fue EcowashWeb, una página estática para un negocio local de lavado de autos. Siempre estoy codeando y commiteando a mi GitHub."
   },
-  "techStack": {
+  "stack": {
     "items": [
       "Express",
       "Nest",
@@ -104,7 +104,7 @@
       }
     ]
   },
-  "workExperience": {
+  "experience": {
     "title": "Experiencia Laboral",
     "experience": [
       {

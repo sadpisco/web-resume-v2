@@ -35,7 +35,7 @@
     "title": "About me",
     "summary": "I'm a Full Stack Web Developer from Henry BootCamps and Bachelor's in Business Engineering from Peruvian Private Northern University (UPN). I have experience developing web applications that are responsive and scalable. Im skilled in frameworks like React for FrontEnd and Express & Nest in BackEnd. I've built several projects on my portfolio using React, Express and Nest, where I can show my habilities building responsive web sites and secure backEnd servers. My last project as a freelancer was EcowashWeb, a static site for a carwash local business. I'm a very proactive person, I'm always working on a project and pushing changes to my gitHub."
   },
-  "techStack": {
+  "stack": {
     "items": [
       "Express",
       "Nest",
@@ -105,7 +105,7 @@
       }
     ]
   },
-  "workExperience": {
+  "experience": {
     "title": "Experience",
     "experience": [
       {
