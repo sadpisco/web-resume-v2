@@ -1,7 +1,7 @@
-# Astro Starter Kit: Basics
+# Astro Web Resume to export PDF File
 
 ```sh
-pnpm create astro@latest -- --template basics
+nvm use 20
 ```
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
