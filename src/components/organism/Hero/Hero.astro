@@ -4,7 +4,7 @@ import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
 import HeroItem from "@/components/molecules/HeroItem";
 import type { HeroBlockProps } from "@/types/blocks";
-import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
+import { Cake, EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
 import { Image } from "astro:assets";
 const {
   name,
@@ -21,7 +21,7 @@ const {
   <Image
     src={ProfilePic}
     alt="profile picture"
-    class="w-50 h-fit rounded-xl shadow-xl"
+    class="w-56 h-fit rounded-xl shadow-xl"
   />
   <div class="flex flex-col gap-2">
     <div>
@@ -50,6 +50,9 @@ const {
         link={location?.link}
       >
         <MapPin slot="icon" size={20} weight="bold" />
+      </HeroItem>
+      <HeroItem text={age}>
+        <Cake slot="icon" size={20} weight="bold" />
       </HeroItem>
       {
         profiles?.map((profile) => (
