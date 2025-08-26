@@ -1,0 +1,21 @@
+---
+import Typography from "@/components/atoms/Typography";
+
+interface HeroItemProps {
+  text?: string;
+  link?: string | null;
+}
+const { text, link = null }: HeroItemProps = Astro.props;
+---
+
+<section class="flex items-center gap-2">
+  <slot name="icon" />
+  {
+    link && (
+      <a href={link} target="_blank" class="hover:underline">
+        <Typography text={text} variant="label4" className="font-light" />
+      </a>
+    )
+  }
+  {!link && <Typography text={text} variant="label3" className="font-light" />}
+</section>

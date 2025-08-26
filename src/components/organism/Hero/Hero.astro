@@ -1,23 +1,80 @@
 ---
-import ProfilePic from "@/assets/profilePic.jpg";
+import ProfilePic from "@/assets/images/profilePic.jpg";
+// import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
+import HeroItem from "@/components/molecules/HeroItem";
 import { Image } from "astro:assets";
+import { EnvelopeSimple, MapPin, Phone } from "phosphor-react";
 interface HeroProps {
   name?: string;
   position?: string;
-  role?: string;
+  email?: string;
+  age?: string;
+  phone?: string;
+  location?: {
+    address?: string;
+    postalCode?: string;
+    city?: string;
+    countryCode?: string;
+    region?: string;
+    link?: string;
+  };
+  profiles?: {
+    network?: string;
+    icon?: string;
+    username?: string;
+    url?: string;
+  }[];
 }
-const { name, position, role }: HeroProps = Astro.props;
+const { name, position, email, age, phone, location, profiles }: HeroProps =
+  Astro.props;
 ---
 
 <section class="w-full flex items-start justify-start gap-4">
   <Image
     src={ProfilePic}
     alt="profile picture"
-    class="w-64 h-fit rounded-xl shadow-xl"
+    class="w-50 h-fit rounded-xl shadow-xl"
   />
-  <div class="flex flex-col">
-    <Typography tag="h1" text={name} variant="label1" />
-    <Typography tag="p" text={position} variant="label5" />
+  <div class="flex flex-col gap-2">
+    <div>
+      <Typography tag="h1" text={name} variant="label1" />
+      <Typography
+        tag="h2"
+        text={position}
+        variant="label3"
+        className="font-thin text-gray-400"
+      />
+    </div>
+    <div class="flex flex-col gap-1">
+      <HeroItem text={email} link={`mailto:${email}`}>
+        <EnvelopeSimple slot="icon" size={20} weight="bold" />
+      </HeroItem>
+      <HeroItem text={phone} link={`tel:${phone}`}>
+        <Phone slot="icon" size={20} weight="bold" />
+      </HeroItem>
+      <!-- <HeroItem text={age}>
+        <Cake slot="icon" size={20} weight="bold" />
+      </HeroItem> -->
+      <HeroItem
+        text={location?.city + ", " + location?.countryCode}
+        link={location?.link}
+      >
+        <MapPin slot="icon" size={20} weight="bold" />
+      </HeroItem>
+      {
+        profiles?.map((profile) => (
+          <HeroItem text={profile.username} link={profile.url}>
+            {/* <DynamicIcon
+              slot="icon"
+              size={20}
+              iconname={profile.icon}
+              weight="bold"
+              client:load
+            /> */}
+          </HeroItem>
+        ))
+      }
+    </div>
   </div>
 </section>

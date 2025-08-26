@@ -2,31 +2,35 @@
   "hero": {
     "name": "Leonardo Risco",
     "position": "Full Stack Web Developer",
-    "role": "I create scalable web software",
     "email": "leo99153@gmail.com",
-    "phone": "+51954163059",
+    "age": "26 years old",
+    "phone": "+51 954 163 059",
     "url": "https://www.linkedin.com/in/leonardo-risco/",
     "location": {
       "address": "Victor Larco Herrera",
       "postalCode": "13001",
       "city": "Trujillo",
       "countryCode": "PE",
-      "region": "La Libertad"
+      "region": "La Libertad",
+      "link": "https://maps.app.goo.gl/isTu37o1A1wq79S7A"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "Leonardo Risco",
+        "icon": "LinkedinLogo",
+        "username": "leonardo-risco",
         "url": "https://www.linkedin.com/in/leonardo-risco/"
       },
       {
         "network": "GitHub",
-        "username": "Leonardo Risco",
+        "icon": "GithubLogo",
+        "username": "sadpisco",
         "url": "https://github.com/sadpisco"
       },
       {
         "network": "Instagram",
-        "username": "Leonardo Risco",
+        "icon": "InstagramLogo",
+        "username": "elpiscano",
         "url": "https://www.instagram.com/sadpisco/"
       }
     ]
