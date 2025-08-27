@@ -8,7 +8,7 @@ const { title, projects }: ProjectsBlockProps = Astro.props;
 
 <section class="w-full flex flex-col gap-2">
   <Typography tag="h2" text={title} variant="label2" className="font-medium" />
-  <div class="flex flex-wrap gap-2">
+  <div class="flex flex-wrap gap-3">
     {projects?.map((item) => <ProjectCard {...item} />)}
   </div>
 </section>

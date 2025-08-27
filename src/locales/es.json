@@ -196,9 +196,7 @@
           "Tailwind",
           "Material UI",
           "Paypal",
-          "Redux",
-          "Bootstrap",
-          "Tailwind CSS"
+          "Bootstrap"
         ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
         "status": "Terminado",
@@ -232,7 +230,7 @@
         "name": "Freelancer",
         "position": "Desarrollo Web",
         "startDate": "2024/03/24",
-        "endDate": "Actualidad",
+        "endDate": "2024/06/02",
         "summary": "Página estática integrada con Calendly API para gestión de Citas, portfolio de servicios de lavado.",
         "location": "Remoto"
       },
