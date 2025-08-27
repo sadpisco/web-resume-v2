@@ -24,11 +24,13 @@ const {
 }: HeroBlockProps = Astro.props;
 ---
 
-<section class="w-full flex items-start justify-start gap-4">
+<section
+  class="w-full flex flex-col sm:flex-row items-start sm:justify-start gap-4"
+>
   <Image
     src={ProfilePic}
     alt="profile picture"
-    class="w-56 h-fit rounded-xl shadow-xl"
+    class="w-32 sm:w-56 h-fit rounded-xl shadow-xl print:w-49"
   />
   <div class="flex flex-col gap-2">
     <div>
@@ -47,31 +49,66 @@ const {
     </div>
     <div class="flex flex-col gap-1">
       <HeroItem text={email} link={`mailto:${email}`}>
-        <EnvelopeSimple slot="icon" size={20} weight="bold" />
+        <EnvelopeSimple
+          slot="icon"
+          size={20}
+          weight="bold"
+          className="print:text-black"
+        />
       </HeroItem>
       <HeroItem text={phone} link={`tel:${phone}`}>
-        <Phone slot="icon" size={20} weight="bold" />
+        <Phone
+          slot="icon"
+          size={20}
+          weight="bold"
+          className="print:text-black"
+        />
       </HeroItem>
       <HeroItem
         text={location?.city + ", " + location?.countryCode}
         link={location?.link}
       >
-        <MapPin slot="icon" size={20} weight="bold" />
+        <MapPin
+          slot="icon"
+          size={20}
+          weight="bold"
+          className="print:text-black"
+        />
       </HeroItem>
       <HeroItem text={age}>
-        <Cake slot="icon" size={20} weight="bold" />
+        <Cake
+          slot="icon"
+          size={20}
+          weight="bold"
+          className="print:text-black"
+        />
       </HeroItem>
       {
         profiles?.map((profile) => (
           <HeroItem text={profile.username} link={profile.url}>
             {profile?.icon === "LinkedinLogo" && (
-              <LinkedinLogo slot="icon" size={20} weight="bold" />
+              <LinkedinLogo
+                slot="icon"
+                size={20}
+                weight="bold"
+                className="print:text-black"
+              />
             )}
             {profile?.icon === "GithubLogo" && (
-              <GithubLogo slot="icon" size={20} weight="bold" />
+              <GithubLogo
+                slot="icon"
+                size={20}
+                weight="bold"
+                className="print:text-black"
+              />
             )}
             {profile?.icon === "InstagramLogo" && (
-              <InstagramLogo slot="icon" size={20} weight="bold" />
+              <InstagramLogo
+                slot="icon"
+                size={20}
+                weight="bold"
+                className="print:text-black"
+              />
             )}
           </HeroItem>
         ))

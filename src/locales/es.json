@@ -31,7 +31,7 @@
         "network": "Instagram",
         "icon": "InstagramLogo",
         "username": "@elpiscano",
-        "url": "https://www.instagram.com/sadpisco/"
+        "url": "https://www.instagram.com/elpiscano/"
       }
     ]
   },
@@ -125,7 +125,7 @@
     ]
   },
   "projects": {
-    "title": "Mis Proyectos",
+    "title": "Proyectos Personales",
     "projects": [
       {
         "name": "Ecowash",
