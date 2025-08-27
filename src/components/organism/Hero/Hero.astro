@@ -1,10 +1,17 @@
 ---
 import ProfilePic from "@/assets/images/profilePic.jpg";
-import DynamicIcon from "@/components/atoms/DynamicIcon";
 import Typography from "@/components/atoms/Typography";
 import HeroItem from "@/components/molecules/HeroItem";
 import type { HeroBlockProps } from "@/types/blocks";
-import { Cake, EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
+import {
+  Cake,
+  EnvelopeSimple,
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  MapPin,
+  Phone,
+} from "@phosphor-icons/react";
 import { Image } from "astro:assets";
 const {
   name,
@@ -57,13 +64,15 @@ const {
       {
         profiles?.map((profile) => (
           <HeroItem text={profile.username} link={profile.url}>
-            <DynamicIcon
-              slot="icon"
-              size={20}
-              iconname={profile.icon}
-              weight="bold"
-              client:only="react"
-            />
+            {profile?.icon === "LinkedinLogo" && (
+              <LinkedinLogo slot="icon" size={20} weight="bold" />
+            )}
+            {profile?.icon === "GithubLogo" && (
+              <GithubLogo slot="icon" size={20} weight="bold" />
+            )}
+            {profile?.icon === "InstagramLogo" && (
+              <InstagramLogo slot="icon" size={20} weight="bold" />
+            )}
           </HeroItem>
         ))
       }
