@@ -44,7 +44,7 @@ const {
         tag="h2"
         text={position}
         variant="label3"
-        className="font-thin text-gray-400"
+        className="font-light text-gray-400 print:text-gray-400!"
       />
     </div>
     <div class="flex flex-col gap-1">
@@ -53,7 +53,7 @@ const {
           slot="icon"
           size={20}
           weight="bold"
-          className="print:text-black"
+          className="print:text-gray-400! text-gray-400"
         />
       </HeroItem>
       <HeroItem text={phone} link={`tel:${phone}`}>
@@ -61,7 +61,7 @@ const {
           slot="icon"
           size={20}
           weight="bold"
-          className="print:text-black"
+          className="print:text-gray-400! text-gray-400"
         />
       </HeroItem>
       <HeroItem
@@ -72,7 +72,7 @@ const {
           slot="icon"
           size={20}
           weight="bold"
-          className="print:text-black"
+          className="print:text-gray-400! text-gray-400"
         />
       </HeroItem>
       <HeroItem text={age}>
@@ -80,7 +80,7 @@ const {
           slot="icon"
           size={20}
           weight="bold"
-          className="print:text-black"
+          className="print:text-gray-400! text-gray-400"
         />
       </HeroItem>
       {
@@ -91,7 +91,7 @@ const {
                 slot="icon"
                 size={20}
                 weight="bold"
-                className="print:text-black"
+                className="print:text-gray-400! text-gray-400"
               />
             )}
             {profile?.icon === "GithubLogo" && (
@@ -99,7 +99,7 @@ const {
                 slot="icon"
                 size={20}
                 weight="bold"
-                className="print:text-black"
+                className="print:text-gray-400! text-gray-400"
               />
             )}
             {profile?.icon === "InstagramLogo" && (
@@ -107,7 +107,7 @@ const {
                 slot="icon"
                 size={20}
                 weight="bold"
-                className="print:text-black"
+                className="print:text-gray-400! text-gray-400"
               />
             )}
           </HeroItem>
