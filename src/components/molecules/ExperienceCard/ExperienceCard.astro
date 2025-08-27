@@ -20,14 +20,54 @@ const {
 }: ExperienceCardProps = Astro.props;
 ---
 
-<section class="w-full flex flex-col gap-2">
-  <div class="flex justify-between items-center">
-    <Typography tag="h3" text={name} variant="label3" className="font-medium" />
-    <Typography
-      tag="p"
-      text={position}
-      variant="label4"
-      className="font-light"
-    />
+<section
+  class="w-full flex flex-col gap-1 border-b border-gray-300 dark:border-gray-800 pb-2"
+>
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+    <div class="flex items-center gap-1">
+      <Typography
+        tag="h3"
+        text={position}
+        variant="label3"
+        className="font-medium"
+      />
+      <span class="text-gray-500 dark:text-gray-400"> - </span>
+      <Typography tag="p" text={name} variant="label4" className="font-light" />
+    </div>
+    <div class="flex items-center gap-1">
+      <Typography
+        tag="p"
+        text={startDate}
+        variant="label4"
+        className="font-light"
+      />
+      <span class="text-gray-500 dark:text-gray-400"> - </span>
+      <Typography
+        tag="p"
+        text={endDate}
+        variant="label4"
+        className="font-light"
+      />
+    </div>
   </div>
+  {
+    location && (
+      <Typography
+        tag="p"
+        text={location}
+        variant="label4"
+        className="font-light"
+      />
+    )
+  }
+  {
+    summary && (
+      <Typography
+        tag="p"
+        text={summary}
+        variant="label4"
+        className="font-light"
+      />
+    )
+  }
 </section>

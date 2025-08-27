@@ -6,24 +6,35 @@ const { title, items }: StackBlockProps = Astro.props;
 ---
 
 <section class="w-full flex flex-col gap-2">
-  <Typography tag="h2" text={title} variant="label2" className="font-medium" />
-  <div class="flex flex-wrap gap-2">
-    {
-      items?.map((item) => (
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="font-light text-justify bg-gray-200 dark:bg-gray-800 rounded-md px-3 py-1 shadow-sm group hover:scale-110 transition-all duration-300 print:shadow-none print:border-[2px] print:border-gray-300"
-        >
-          <Typography
-            tag="p"
-            text={item.name}
-            variant="label4"
-            className="group-hover:text-underline"
-          />
-        </a>
-      ))
-    }
-  </div>
+  {
+    title && (
+      <Typography
+        tag="h2"
+        text={title}
+        variant="label2"
+        className="font-medium"
+      />
+    )
+  }
+  {
+    items && items.length > 0 && (
+      <div class="flex flex-wrap gap-2">
+        {items?.map((item) => (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-light text-justify bg-gray-200 dark:bg-gray-800 rounded-md px-3 py-1 shadow-sm group hover:scale-110 transition-all duration-300 print:shadow-none print:border-[2px] print:border-gray-300"
+          >
+            <Typography
+              tag="p"
+              text={item.name}
+              variant="label4"
+              className="group-hover:text-underline"
+            />
+          </a>
+        ))}
+      </div>
+    )
+  }
 </section>

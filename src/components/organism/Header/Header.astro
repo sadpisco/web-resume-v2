@@ -8,10 +8,10 @@ import { getLocale } from "astro-i18n-aut";
 const locale = getLocale(Astro.url);
 ---
 
-<nav class="flex justify-between w-full bg-blend-color print:hidden">
+<nav class="flex-wrap sm:flex sm:justify-between w-full print:hidden">
   <DarkThemeSwitch locale={locale} client:load />
   <button
-    class="bg-transparent dark:bg-transparent rounded-md p-1 flex items-center gap-2 hover:scale-110 transition-all duration-300 hover:cursor-pointer px-4 py-2"
+    class="bg-none dark:bg-transparent rounded-md p-1 flex items-center gap-2 hover:scale-110 transition-all duration-300 hover:cursor-pointer px-4 py-2"
     type="button"
     onclick="window.print()"
   >
@@ -20,7 +20,7 @@ const locale = getLocale(Astro.url);
       tag="p"
       text={locale === "en" ? "Print" : "Imprimir"}
       variant="label4"
-      className="font-light"
+      className="font-light text-sm sm:text-md"
     />
   </button>
   <LangSwitch locale={locale} client:load />

@@ -7,8 +7,23 @@ const { title, experience }: ExperienceBlockProps = Astro.props;
 ---
 
 <section class="w-full flex flex-col gap-2">
-  <Typography tag="h2" text={title} variant="label2" className="font-medium" />
-  <div class="flex flex-col gap-2">
-    {experience?.map((item) => <ExperienceCard {...item} />)}
-  </div>
+  {
+    title && (
+      <Typography
+        tag="h2"
+        text={title}
+        variant="label2"
+        className="font-medium"
+      />
+    )
+  }
+  {
+    experience && experience.length > 0 && (
+      <div class="flex flex-col gap-4">
+        {experience?.map((item) => (
+          <ExperienceCard {...item} />
+        ))}
+      </div>
+    )
+  }
 </section>
