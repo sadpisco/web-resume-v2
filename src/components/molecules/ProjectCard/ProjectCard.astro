@@ -1,0 +1,100 @@
+---
+import Typography from "@/components/atoms/Typography";
+import { Browsers, GithubLogo } from "@phosphor-icons/react";
+
+interface ProjectCardProps {
+  name?: string;
+  stack?: string[];
+  description?: string;
+  image?: string;
+  status?: string;
+  url?: string;
+  gitHub?: string;
+}
+
+const {
+  name,
+  stack,
+  description,
+  image,
+  status,
+  url,
+  gitHub,
+}: ProjectCardProps = Astro.props;
+---
+
+<section
+  class="w-full md:w-[48%] h-fit lg:h-55 flex flex-col gap-2 border-[2px] border-gray-300 rounded-md p-3 dark:border-gray-800 dark:border-3 justify-between print:h-fit print:break-inside-avoid"
+>
+  <div class="flex justify-between items-center w-full">
+    {
+      name && (
+        <Typography
+          tag="h3"
+          text={name}
+          variant="label3"
+          className="font-medium"
+        />
+      )
+    }
+    {
+      status && (
+        <Typography
+          tag="p"
+          text={status}
+          variant="label4"
+          className="font-light"
+        />
+      )
+    }
+  </div>
+  {
+    description && (
+      <Typography
+        tag="p"
+        text={description}
+        variant="label4"
+        className="font-light"
+      />
+    )
+  }
+  <div class="flex flex-wrap gap-1">
+    {
+      stack?.map((item) => (
+        <Typography
+          tag="p"
+          text={item}
+          variant="label5"
+          className="font-light bg-gray-200 dark:bg-gray-800 rounded-md px-2 py-1 shadow-sm print:shadow-none print:border-[2px] print:border-gray-300"
+        />
+      ))
+    }
+  </div>
+
+  <div class="flex gap-2 justify-end print:hidden">
+    {
+      gitHub && (
+        <a
+          href={gitHub}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:scale-110 transition-all duration-300 bg-gray-200 dark:bg-gray-800 rounded-md p-1 shadow-md"
+        >
+          <GithubLogo size={24} />
+        </a>
+      )
+    }
+    {
+      url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:scale-110 transition-all duration-300 bg-gray-200 dark:bg-gray-800 rounded-md p-1 shadow-md"
+        >
+          <Browsers size={24} />
+        </a>
+      )
+    }
+  </div>
+</section>

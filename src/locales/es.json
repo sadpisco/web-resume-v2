@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Leonardo Risco",
-    "position": "Desarrollador Web Full Stack",
+    "position": "Desarrollador Web Full Stack & Diseñador Ux/Ui",
     "email": "leo99153@gmail.com",
     "age": "26 años",
     "phone": "+51 954 163 059",
@@ -129,49 +129,95 @@
     "projects": [
       {
         "name": "Ecowash",
-        "startDate": "2024/05/04",
-        "endDate": "2024/05/05",
-        "description": "Página estática en React.js, integrado con Google Maps API y Calendly API, Tailwind CSS, MUi, Responsive y Bootstrap. Portfolio web para servicios empresariales de negocio de autolavado.",
+        "description": "Landing page para empresa de servicios de autolavado.",
+        "stack": [
+          "React.js",
+          "Tailwind",
+          "Material UI",
+          "Bootstrap",
+          "Google Maps API",
+          "Calendly API"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973818/ecowash_csxpkn.png",
         "status": "Terminado",
         "url": "https://lavadosecowash.netlify.app/",
         "gitHub": "https://github.com/sadpisco/EcowashWeb"
       },
       {
-        "name": "TechZone",
-        "startDate": "2024/02/04",
-        "endDate": "Actualidad",
-        "description": "Tienda Virtual construida en  Nest, TypeORM y MySQL RestAPi, JWT Auth (BackEnd), Front con React Next.JS TypeScript, TailwindCSS, Paypal, Redux, Bootstrap, TailwindCSS y MUI.",
-        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
-        "status": "En desarrollo",
-        "url": "https://project.com/",
-        "gitHub": "https://github.com/TechZoneDevs/client"
-      },
-      {
-        "name": "Matching",
-        "startDate": "2019/01/01",
-        "endDate": "2021/01/01",
-        "description": "Red Social Deportiva, Express RestAPI, PostgreSQL y Sequelize, FirebaseAuth y MercadoPago. Front con React.js, Redux, Material UI, Bootstrap, TailwindCSS. Responsive, consume microservicios de localización. Encriptación con JWT.",
-        "image": "https://res.cloudinary.com/dphpu225t/image/upload/v1719439335/846_1x_shots_so_ekrweh.png",
-        "status": "Terminado",
-        "url": "https://project.com/",
-        "gitHub": "https://github.com/MatchingProyect/Matching-Front"
-      },
-      {
         "name": "The Rick And Morty Project",
-        "startDate": "2019/01/01",
-        "endDate": "2021/01/01",
-        "description": "Rest API construida en Express, Sequelize y PostgreSQL y Cliente con React, Redux, MaterialUI, Tailwind y Bootstrap.",
+        "description": "Rest API educativa.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973817/rymresult_l6e6az.png",
         "status": "Terminado",
         "url": "https://rym-front-2vuf.onrender.com",
         "gitHub": "https://github.com/sadpisco/RickAndMortyProyect"
       },
       {
-        "name": "Basic CRUD",
-        "startDate": "2024/05/05",
-        "endDate": "2024/5/15 - One week",
-        "description": "CRUD Básico. Express RestAPI con PostgreSQL & Sequelize, React.JS integrado con Redux y autenticación JWT, MUi, Bootstrap & TailwindCSS.",
+        "name": "Matching",
+        "description": "Red Social Deportiva para manejo de reservas.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "FirebaseAuth",
+          "MercadoPago",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind"
+        ],
+        "image": "https://res.cloudinary.com/dphpu225t/image/upload/v1719439335/846_1x_shots_so_ekrweh.png",
+        "status": "Terminado",
+        "url": "https://github.com/MatchingProyect/Matching-Front",
+        "gitHub": "https://github.com/MatchingProyect/Matching-Front"
+      },
+
+      {
+        "name": "TechZone",
+        "description": "Tech eCommerce, Font & Back con user auth.",
+        "stack": [
+          "Nest.js",
+          "TypeORM",
+          "MySQL",
+          "JWT",
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "Tailwind",
+          "Material UI",
+          "Paypal",
+          "Redux",
+          "Bootstrap",
+          "Tailwind CSS"
+        ],
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
+        "status": "Terminado",
+        "url": "https://www.figma.com/design/Ojb4tZNchuQYWuvJAoJJcA/TechZone?node-id=0-1&t=DOCzrsjbSrvqlDY3-1",
+        "gitHub": "https://github.com/TechZoneDevs/client"
+      },
+      {
+        "name": "Database CRUD",
+        "description": "CRUD Básico para aprendizaje.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1716510277/919shots_so_abru0p.png",
         "status": "Terminado",
         "url": "https://client-haciendola-chi.vercel.app/",

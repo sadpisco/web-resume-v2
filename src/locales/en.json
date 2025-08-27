@@ -1,7 +1,7 @@
 {
   "hero": {
     "name": "Leonardo Risco",
-    "position": "Full Stack Web Developer",
+    "position": "Full Stack Web Developer & Ux/Ui Designer",
     "email": "leo99153@gmail.com",
     "age": "26 years old",
     "phone": "+51 954 163 059",
@@ -129,52 +129,96 @@
     "projects": [
       {
         "name": "Ecowash",
-        "startDate": "2024/05/04",
-        "endDate": "2024/05/05",
-        "description": "Static Page - React.js, GoogleMaps API, Calendly API, TailwindCSS, MUi, Responsive and  Bootrap. Serverless web page for a local Carwash.",
+        "description": "Landing page for a carwash local business.",
+        "stack": [
+          "React.js",
+          "Tailwind",
+          "Material UI",
+          "Bootstrap",
+          "Google Maps API",
+          "Calendly API"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973818/ecowash_csxpkn.png",
-        "status": "Finished",
+        "status": "Done",
         "url": "https://lavadosecowash.netlify.app/",
         "gitHub": "https://github.com/sadpisco/EcowashWeb"
       },
       {
-        "name": "TechZone",
-        "startDate": "2024/02/04",
-        "endDate": "Today",
-        "description": "eCommerce - Nest, TypeORM and MySQL RestAPi ,JWT Auth, Front with React TypeScript, TailwindCSS, Paypal, Redux, Next.JS, Bootstrap, TailwindCSS and MUI.",
-        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
-        "status": "On Development",
-        "url": "https://project.com/",
-        "gitHub": "https://github.com/TechZoneDevs/client",
-        "technologies": ["React", "TypeScript", ""]
-      },
-      {
-        "name": "Matching",
-        "startDate": "2019/01/01",
-        "endDate": "2021/01/01",
-        "description": "Sports App - Express RestAPI, PostgreSQL & Sequelize, FirebaseAuth and MercadoPago integrated. Front with React.js, Redux, Material UI, Bootstrap, TailwindCSS.",
-        "image": "https://res.cloudinary.com/dphpu225t/image/upload/v1719439335/846_1x_shots_so_ekrweh.png",
-        "status": "Finished",
-        "url": "https://project.com/",
-        "gitHub": "https://github.com/MatchingProyect/Matching-Front"
-      },
-      {
         "name": "The Rick And Morty Project",
-        "startDate": "2019/01/01",
-        "endDate": "2021/01/01",
-        "description": "Basic CRUD - API Rest with Express, PostgreSQL and Sequelize. Front with React.js, Redux, CSS, Mui.",
+        "description": "Educational Rest API.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714973817/rymresult_l6e6az.png",
-        "status": "Finished",
+        "status": "Done",
         "url": "https://rym-front-2vuf.onrender.com",
         "gitHub": "https://github.com/sadpisco/RickAndMortyProyect"
       },
+
       {
-        "name": "Basic CRUD",
-        "startDate": "2024/05/05",
-        "endDate": "2024/5/15 - One week",
-        "description": "Express RestAPI with PostgreSQL & Sequelize, React.JS integrated with Redux and JWT Auth, MUi, Bootstrap & TailwindCSS.",
+        "name": "Matching",
+        "description": "Sports Social Network for reservation management.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "FirebaseAuth",
+          "MercadoPago",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Bootstrap",
+          "Tailwind"
+        ],
+        "image": "https://res.cloudinary.com/dphpu225t/image/upload/v1719439335/846_1x_shots_so_ekrweh.png",
+        "status": "Done",
+        "url": "https://github.com/MatchingProyect/Matching-Front",
+        "gitHub": "https://github.com/MatchingProyect/Matching-Front"
+      },
+
+      {
+        "name": "TechZone",
+        "description": "Tech eCommerce, Front & Back with user authentication.",
+        "stack": [
+          "Nest.js",
+          "TypeORM",
+          "MySQL",
+          "JWT",
+          "React.js",
+          "Next.js",
+          "TypeScript",
+          "Material UI",
+          "Paypal",
+          "Bootstrap",
+          "Tailwind"
+        ],
+        "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1714984028/105shots_so_ngx9qw.png",
+        "status": "Done",
+        "url": "https://www.figma.com/design/Ojb4tZNchuQYWuvJAoJJcA/TechZone?node-id=0-1&t=DOCzrsjbSrvqlDY3-1",
+        "gitHub": "https://github.com/TechZoneDevs/client"
+      },
+      {
+        "name": "Database CRUD",
+        "description": "Basic CRUD with UI FrontEnd for learning.",
+        "stack": [
+          "Express.js",
+          "PostgreSQL",
+          "Sequelize",
+          "React.js",
+          "Redux",
+          "Material UI",
+          "Tailwind",
+          "Bootstrap"
+        ],
         "image": "https://res.cloudinary.com/ductjwavg/image/upload/v1716510277/919shots_so_abru0p.png",
-        "status": "Finished",
+        "status": "Done",
         "url": "https://client-haciendola-chi.vercel.app/",
         "gitHub": "https://github.com/sadpisco/client-haciendola"
       }

@@ -33,3 +33,17 @@ export interface StackBlockProps {
         url?: string;
     }[];
 }
+
+export interface ProjectsBlockProps {
+    title?: string;
+    projects?: {
+        name?: string;
+        stack?: string[];
+        description?: string;
+        image?: string;
+        status?: string;
+        url?: string;
+        gitHub?: string;
+        technologies?: string[];
+    }[];
+}

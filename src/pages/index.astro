@@ -1,5 +1,6 @@
 ---
 import Hero from "@/components/organism/Hero";
+import Projects from "@/components/organism/Projects";
 import Stack from "@/components/organism/Stack";
 import Summary from "@/components/organism/Summary";
 import useTranslations from "@/hooks/useTranslations";
@@ -16,4 +17,5 @@ const data = await getTranslations(locale);
   <Hero {...data.hero} />
   <Summary {...data.summary} />
   <Stack {...data.stack} />
+  <Projects {...data.projects} />
 </Layout>
