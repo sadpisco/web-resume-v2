@@ -266,47 +266,30 @@
   },
   "education": {
     "title": "Education",
-    "titleTwo": "Knowledge on",
-    "educations": [
+    "education": [
       {
-        "institution": "Henry FullStack Bootcamp",
-        "area": "Software Development",
-        "title": "FullStack Developer",
+        "institution": "Henry Bootcamps",
+        "title": "FullStack Web Developer",
         "startDate": "2023/11/15",
         "endDate": "2024/02/15",
-        "summary": "Knowledge developing web applications that are responsive and scalable. My english has allowed me to improve my skills, accessing information that its not in spanish, helped me improving my teamwork, also, allow my applications to support business processes with ease. I am a very proactive person who's always taking new goals in order to improve my capabilities. I have some projects where I've worked in UX / UI design, front-End & back-End. Please feel free to check them.",
-        "areas": [
-          "SQL",
-          "JavaScript",
-          "PostgreSQL",
-          "Node",
-          "Express",
-          "React.Js",
-          "TypeScript",
-          "CSS",
-          "Redux",
-          "Next.Js",
-          "Sequelize",
-          "MUI"
-        ]
+        "summary": "Responsive and scalable web application development. Developing mainly in TypeScript and JavaScript, using the frameworks of Express, Nest, React, Next and Angular. I also have experience designing UX / UI Web in Figma and Webflow.",
+        "url": "https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=0c814ec78e282f45b19fb0adf8f16518f0cae05f945fac3ee48fda9da9323062"
       },
       {
-        "institution": "Private Northern University",
-        "area": "Business",
+        "institution": "Universidad Privada del Norte",
         "title": "Business Engineering",
         "startDate": "2016/03/05",
         "endDate": "2021/12/15",
-        "summary": "Bachelor at Business School. Business Engineer title is currently in process. Proficient knowledge on business management areas and workflows. Experience creating and developing supply chains, logistics procedures, inventory management, and human resources management & recruiting. Specialized on process management and business cases problem solving.",
-        "areas": [
-          "Supply Chain",
-          "Project Management",
-          "Business Proceses",
-          "Recruiting",
-          "Internal and External Logistics",
-          "Business IT Infrastructures",
-          "Customer Relationship Management",
-          "Data Entry"
-        ]
+        "summary": "Business Engineering Bachelor. Developing as a process analyst. Advanced knowledge in business management areas. Experience in creating and developing supply chains, logistics procedures, inventory management, human resources management. Specialized in process management (BPM) and problem solving in business cases.",
+        "url": "https://drive.google.com/file/d/1a8N6lrHzeG7VahX8VN5j5Auyd7iCEnQA/view"
+      },
+      {
+        "institution": "Atenea Cultural Exchange Programs",
+        "title": "Work and Travel USA",
+        "startDate": "2019/08/12",
+        "endDate": "2020/04/15",
+        "summary": "Cultural exchange program to work and travel in USA. I worked in the internal logistics area of a sports stadium. Where I was responsible for the distribution of commercial merchandise in the different stores.",
+        "url": "https://cert.efset.org/aKF8Nu"
       }
     ]
   },
@@ -333,5 +316,7 @@
       }
     ]
   },
-  "extras": {}
+  "extras": {
+    "certification": "Certification"
+  }
 }

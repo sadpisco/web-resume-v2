@@ -1,3 +1,33 @@
 ---
+import Typography from "@/components/atoms/Typography";
+import EducationCard from "@/components/molecules/EducationCard";
+import type { EducationBlockProps, ExtrasBlockProps } from "@/types/blocks";
 
+const {
+  title,
+  education,
+  certification,
+}: EducationBlockProps & ExtrasBlockProps = Astro.props;
 ---
+
+<section class="w-full flex flex-col gap-2">
+  {
+    title && (
+      <Typography
+        tag="h2"
+        text={title}
+        variant="label2"
+        className="font-medium"
+      />
+    )
+  }
+  {
+    education && education.length > 0 && (
+      <div class="flex flex-wrap gap-5">
+        {education?.map((item) => (
+          <EducationCard {...item} certification={certification} />
+        ))}
+      </div>
+    )
+  }
+</section>

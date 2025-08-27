@@ -59,3 +59,20 @@ export interface ExperienceBlockProps {
         location?: string;
     }[];
 }
+
+export interface EducationBlockProps {
+    title?: string;
+    education?: {
+        institution?: string;
+        area?: string;
+        title?: string;
+        startDate?: string;
+        endDate?: string;
+        summary?: string;
+        url?: string;
+    }[];
+}
+
+export interface ExtrasBlockProps {
+    certification?: string;
+}

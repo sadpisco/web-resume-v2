@@ -1,0 +1,96 @@
+---
+import Typography from "@/components/atoms/Typography";
+import { Certificate } from "@phosphor-icons/react";
+
+interface EducationCardProps {
+  institution?: string;
+  area?: string;
+  title?: string;
+  startDate?: string;
+  endDate?: string;
+  summary?: string;
+  url?: string;
+  certification?: string;
+}
+
+const {
+  institution,
+  url,
+  title,
+  startDate,
+  endDate,
+  summary,
+  certification,
+}: EducationCardProps = Astro.props;
+---
+
+<section class="w-full md:w-[48%] flex flex-col gap-1">
+  <div class="flex items-start justify-between">
+    <div class="flex flex-col gap-0">
+      {
+        title && (
+          <Typography
+            tag="h3"
+            text={title}
+            variant="label3"
+            className="font-medium"
+          />
+        )
+      }
+      {
+        institution && (
+          <Typography
+            tag="p"
+            text={institution}
+            variant="label4"
+            className="font-light text-gray-400"
+          />
+        )
+      }
+    </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:scale-110 transition-all duration-300 bg-gray-200 dark:bg-gray-800 rounded-md p-1 print:hidden flex gap-1 items-center px-2"
+    >
+      <Certificate size={24} />
+      <Typography
+        tag="p"
+        text={certification}
+        variant="label4"
+        className="font-light"
+      />
+    </a>
+  </div>
+
+  {
+    summary && (
+      <Typography
+        tag="p"
+        text={summary}
+        variant="label4"
+        className="font-light text-justify"
+      />
+    )
+  }
+  {
+    startDate && endDate && (
+      <div class="flex items-end justify-end gap-1">
+        <Typography
+          tag="p"
+          text={startDate}
+          variant="label4"
+          className="font-light text-gray-400"
+        />
+        <span class="text-gray-400"> - </span>
+        <Typography
+          tag="p"
+          text={endDate}
+          variant="label4"
+          className="font-light text-gray-400"
+        />
+      </div>
+    )
+  }
+</section>
