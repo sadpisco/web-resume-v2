@@ -47,3 +47,15 @@ export interface ProjectsBlockProps {
         technologies?: string[];
     }[];
 }
+
+export interface ExperienceBlockProps {
+    title?: string;
+    experience?: {
+        name?: string;
+        position?: string;
+        startDate?: string;
+        endDate?: string;
+        summary?: string;
+        location?: string;
+    }[];
+}

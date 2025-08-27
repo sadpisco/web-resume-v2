@@ -37,7 +37,7 @@
   },
   "summary": {
     "title": "About me",
-    "summary": "I'm a Full Stack Web Developer from Henry BootCamps and Bachelor's in Business Engineering from Peruvian Private Northern University (UPN). I have experience developing web applications that are responsive and scalable. Im skilled in frameworks like React for FrontEnd and Express & Nest in BackEnd. I've built several projects on my portfolio using React, Express and Nest, where I can show my habilities building responsive web sites and secure backEnd servers. My last project as a freelancer was EcowashWeb, a static site for a carwash local business. I'm a very proactive person, I'm always working on a project and pushing changes to my gitHub."
+    "summary": "I'm a FullStack Developer from Henry BootCamps and a Business Engineer from Universidad Privada del Norte (UPN). I'm dedicated to develop scalable and secure frontend architectures, maily in Next, Angular, Nuxt and Astro. Please feel free to take a look at my personal portfolio. Currently working at Evaluar as a FrontEnd Developer and freelancing in my spare time."
   },
   "stack": {
     "title": "Tech Stack",
@@ -51,11 +51,6 @@
         "name": "Nest",
         "icon": "NestLogo",
         "url": "https://nestjs.com/"
-      },
-      {
-        "name": "Angular",
-        "icon": "AngularLogo",
-        "url": "https://angular.dev/"
       },
       {
         "name": "React",
@@ -228,8 +223,16 @@
     "title": "Experience",
     "experience": [
       {
+        "name": "Evaluar",
+        "position": "FrontEnd Developer",
+        "startDate": "2024/06/02",
+        "endDate": "Present",
+        "summary": "FrontEnd architecture creation, component and flow maintenance, landing page development and API integration.",
+        "location": "Remote"
+      },
+      {
         "name": "Freelancer",
-        "position": "Web development",
+        "position": "Web Developer",
         "startDate": "2024/03/24",
         "endDate": "2024/06/02",
         "summary": "Providing general web services and selling landing pages for business all around south america.",

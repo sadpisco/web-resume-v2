@@ -1,4 +1,5 @@
 ---
+import Experience from "@/components/organism/Experience";
 import Hero from "@/components/organism/Hero";
 import Projects from "@/components/organism/Projects";
 import Stack from "@/components/organism/Stack";
@@ -18,4 +19,5 @@ const data = await getTranslations(locale);
   <Summary {...data.summary} />
   <Stack {...data.stack} />
   <Projects {...data.projects} />
+  <Experience {...data.experience} />
 </Layout>

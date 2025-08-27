@@ -1,11 +1,27 @@
 ---
+import Typography from "@/components/atoms/Typography";
 import DarkThemeSwitch from "@/components/molecules/DarkThemeSwitch";
 import LangSwitch from "@/components/molecules/LangSwitch";
+import { Printer } from "@phosphor-icons/react";
 import { getLocale } from "astro-i18n-aut";
+
 const locale = getLocale(Astro.url);
 ---
 
 <nav class="flex justify-between w-full bg-blend-color print:hidden">
   <DarkThemeSwitch locale={locale} client:load />
+  <button
+    class="bg-transparent dark:bg-transparent rounded-md p-1 flex items-center gap-2 hover:scale-110 transition-all duration-300 hover:cursor-pointer px-4 py-2"
+    type="button"
+    onclick="window.print()"
+  >
+    <Printer size={24} />
+    <Typography
+      tag="p"
+      text={locale === "en" ? "Print" : "Imprimir"}
+      variant="label4"
+      className="font-light"
+    />
+  </button>
   <LangSwitch locale={locale} client:load />
 </nav>

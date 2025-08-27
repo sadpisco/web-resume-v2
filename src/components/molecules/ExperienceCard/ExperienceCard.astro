@@ -1,0 +1,33 @@
+---
+import Typography from "@/components/atoms/Typography";
+
+interface ExperienceCardProps {
+  name?: string;
+  position?: string;
+  startDate?: string;
+  endDate?: string;
+  summary?: string;
+  location?: string;
+}
+
+const {
+  name,
+  position,
+  startDate,
+  endDate,
+  summary,
+  location,
+}: ExperienceCardProps = Astro.props;
+---
+
+<section class="w-full flex flex-col gap-2">
+  <div class="flex justify-between items-center">
+    <Typography tag="h3" text={name} variant="label3" className="font-medium" />
+    <Typography
+      tag="p"
+      text={position}
+      variant="label4"
+      className="font-light"
+    />
+  </div>
+</section>

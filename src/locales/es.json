@@ -37,7 +37,7 @@
   },
   "summary": {
     "title": "Sobre mí",
-    "summary": "Soy Desarrollador Web Full Stack de Henry BootCamps y Bachiller en Ingeniería Empresarial de la Universidad Privada del Norte del Perú (UPN). Tengo experiencia desarrollando BackEnds y FrontEnds seguros y escalables. Tengo un conocimiento alto de frameworks como React, Next, Angular, Express y Nest.js. Poseo varios proyectos personals en portfolio donde demuestro mis habilidades como programador y diseñador de aplicaciones Web. Actualmente me desenvuelvo como Freelancer prestando servicios de desarrollo Web a empresas locales, mi último proyecto fue EcowashWeb, una página estática para un negocio local de lavado de autos. Siempre estoy codeando y commiteando a mi GitHub."
+    "summary": "Soy Desarrollador FullStack de Henry BootCamps e Ingeniero Empresarial de la Universidad Privada del Norte del Perú (UPN). Me dedico a desarrollar arquitecturas frontend escalables y seguras. Desarrollo principalmente en Next, Angular, Nuxt y Astro. Siéntete libre de hechar un vistazo a mi portafolio personal. Actualmente me encuentro trabajando en Evaluar como FrontEnd Developer y freelancer en mis tiempos libres."
   },
   "stack": {
     "title": "Tech Stack",
@@ -51,11 +51,6 @@
         "name": "Nest",
         "icon": "NestLogo",
         "url": "https://nestjs.com/"
-      },
-      {
-        "name": "Angular",
-        "icon": "AngularLogo",
-        "url": "https://angular.dev/"
       },
       {
         "name": "React",
@@ -227,11 +222,19 @@
     "title": "Experiencia Laboral",
     "experience": [
       {
+        "name": "Evaluar",
+        "position": "Desarrollador FrontEnd",
+        "startDate": "2024/06/02",
+        "endDate": "Actualidad",
+        "summary": "Creación de arquitecturas FrontEnd, mantenimiento de componentes y flujos, desarrollo de landing pages e integración de APIs.",
+        "location": "Remoto"
+      },
+      {
         "name": "Freelancer",
-        "position": "Desarrollo Web",
+        "position": "Desarrollador Web",
         "startDate": "2024/03/24",
         "endDate": "2024/06/02",
-        "summary": "Página estática integrada con Calendly API para gestión de Citas, portfolio de servicios de lavado.",
+        "summary": "Desarrollo de landing pages para empresas locales, integración de APIs y desarrollo de interfaces de usuario.",
         "location": "Remoto"
       },
       {
