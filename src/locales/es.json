@@ -123,7 +123,7 @@
     "title": "Proyectos Personales",
     "projects": [
       {
-        "name": "Carwash Template",
+        "name": "ForcePrime Carwash Template",
         "description": "Landing page enfocada en Ux/Ui usando Strapi CMS.",
         "stack": [
           "Astro",
