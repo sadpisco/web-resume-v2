@@ -123,6 +123,21 @@
     "title": "Proyectos Personales",
     "projects": [
       {
+        "name": "Carwash Template",
+        "description": "Landing page enfocada en Ux/Ui usando Strapi CMS.",
+        "stack": [
+          "Astro",
+          "Tailwind",
+          "Material UI",
+          "Strapi CMS",
+          "Google Maps API",
+          "Calendly API"
+        ],
+        "status": "En desarrollo",
+        "url": "https://astro-client-aj1.pages.dev/",
+        "gitHub": "https://github.com/sadpisco/astro-client"
+      },
+      {
         "name": "Ecowash",
         "description": "Landing page para empresa de servicios de autolavado.",
         "stack": [
